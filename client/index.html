@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./ccs/style.css" rel="stylesheet">
+    <script type="module" src="./funciones/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Monstruos de Halloween</title>
+</head>
+<body id="body">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top">
+        <div class="container-fluid">
+            <button class="boton-medio-circulo" id="botonAbrirMenu" type="button">
+              <p class="txtBusBoton">Filtrar</p>
+            </button>
+            <button class ="btnNuevoMonstruo" id="btnAbrirForm">
+              <p class="txtBusBoton">Nuevo monstruo</p>
+            </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#redes"><p class="textoBusqueda">Mis redes</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://api.whatsapp.com/send?phone=5491137780934&text=Hola,%20increible%20diseño%20de%20pagina%20web" target="_blank">
+                  <p class="textoBusqueda">Contacto <img class="icono" src="./ccs/imagenes/social media/whatsapp.png"></p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#agradecimientos"><p class="textoBusqueda">Agradecimientos</p></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <div class="jumbotron jumbotron-fluid">
+           <img class="img-fluid" src="/client/ccs/imagenes/cabecera.png">
+        </div>
+    </header>
+    <div class="fondo">
+
+        
+        <div class ="filtrador" id="filtrador">
+
+            <div class="container" style="display: flex;flex-direction: column;justify-content: center; align-items: center; text-align: center; margin: 0; padding: 0;">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <div class="busqueda">
+                        <p class="textoBusqueda">Clase:</p>
+                        <select class="selectorBusqueda" name="filtroMonstruo" id ="filtroMonstruo" class="formularioInput">
+                            <option selected="true" value="todos"> Todos</option>
+                            <option value="esqueleto"> Esqueleto</option>
+                            <option value="zombi"> Zombi</option>
+                            <option value="vampiro"> Vampiro</option>
+                            <option value="fantasma"> Fantasma</option>
+                            <option value="bruja"> Bruja</option>
+                            <option value="hombre lobo"> Hombre lobo</option>
+                        </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs">
+                        <div class="busqueda">
+                            <p class="textoBusqueda">Debilidad:</p>
+                            <select class="selectorBusqueda" name="filtroDebilidad" id ="filtroDebilidad" class="formularioInput">
+                                <option selected="true" value="todas"> Todas</option>
+                                <option value="pocion"> Pocion</option>
+                                <option value="crucifijo"> Crucifijo</option>
+                                <option value="estaca"> Estaca</option>
+                                <option value="plata"> Plata</option>
+                            </select>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs">
+                        <div class="busqueda">
+                            <p class="textoBusqueda">Ordenar nombre:</p>
+                            <div class="form-check form-check-inline" id="checkBusqueda">
+                                <input type="radio" name="NombreAZ" id="ordenarNombre1">
+                                <label class ="labelRBusqueda" for="ordenarNombre1"> A-Z </label>
+                                <input type="radio" name="NombreZA" id="ordenarNombre2">
+                                <label class ="labelRBusqueda" for="ordenarNombre2"> Z-A </label>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs">
+                        <div class="busqueda">
+                            <p class="textoBusqueda">Ordenar alias:</p>
+                            <div class="form-check form-check-inline" id="checkBusqueda">
+                                <input type="radio" name="aliasAZ" id="ordenarAlias1">
+                                <label class ="labelRBusqueda" for="ordenarAlias1"> A-Z </label>
+                                <input type="radio" name="aliasZA" id="ordenarAlias2">
+                                <label class ="labelRBusqueda" for="ordenarAlias2"> Z-A </label>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs">
+                        <div class="busqueda">
+                            <p class="textoBusqueda">Maximo miedo:</p>
+                            <input type="range" class="rangoBusqueda" min="1" max="10" step="1" id="filtroMiedo" name="filtroMiedo">
+                            <p class="textBusquedaRange" id="valorMiedoBusqueda">5</p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs">
+                        <div class="busqueda" style="display: flex;">
+                            <button class="botonBusqueda" id="btnLimpiarFiltro" style="background-color: rgba(81, 211, 87, 0.781);"><p class="txtBusBoton">Limpiar</p></button>
+                            <button class="botonBusqueda" id="btnBusqueda" style="background-color: rgb(212, 132, 12);"><p class="txtBusBoton">Buscar</p></button>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+
+
+        <img src="./ccs/imagenes/boo!.gif" alt="GIF animado" class="gif" id="gif">
+        <div class = "contenedor">
+            <div id="divTabla"></div>
+        </div>
+
+        <dialog id="formulario" class="pop">
+           <div class="formulario">
+            <p class="titulo">Informacion del monstruo:</p>
+               <div class="formularioDiv">
+                   <p class ="textoForm"><img class="icono" src="./ccs/imagenes/iconos/nombre_icon.gif">Nombre</p>
+                   <input type="text"  class="formularioInput" name="nombreMonstruo" id="nombreMonstruo" placeholder=" Ingrese el nombre:" required>
+               </div>
+
+               <div class="formularioDiv">
+                    <p class ="textoForm"><img class="icono" src="./ccs/imagenes/iconos/alias_icon.gif">Alias</p>
+                    <input type="text"  class="formularioInput" name="aliasMonstruo" id="aliasMonstruo" placeholder=" Ingrese el alias:" required>
+               </div>
+
+               <div class="formularioDiv">
+                    <p class ="textoForm"><img class="icono" src="./ccs/imagenes/iconos/tipo_icon.gif">Tipo</p>
+                        <select class="selectForm" id ="tipoMonstruo" class="formularioInput" required>
+                            <option selected="true" disabled="disabled"> Seleccionar el tipo</option>
+                    </select>
+               </div>
+
+               <div class="formularioDiv">
+                     <p class="textoForm"><img class="icono" src="./ccs/imagenes/iconos/debilidad_icon.gif">Debilidad:</p>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="debilidadPlata" id="seleccionDebilidad1">
+                            <label class ="labelFormulario" for="seleccionDebilidad1"> Plata </label>
+                            <input type="radio" name="debilidadEstaca" id="seleccionDebilidad2">
+                            <label class ="labelFormulario" for="seleccionDebilidad2"> Estaca</label>
+                            <input type="radio" name="debilidadCrucifijo" id="seleccionDebilidad3">
+                            <label class ="labelFormulario" for="seleccionDebilidad3"> Crucifijo</label>
+                            <input type="radio" name="debilidadPocion" id="seleccionDebilidad4">
+                            <label class ="labelFormulario" for="seleccionDebilidad4"> Pocion</label>
+                        </div>
+               </div>
+
+               <p class="textoForm"><img class="icono" src="./ccs/imagenes/iconos/miedo_icon.gif" style="margin-left: 5px;">Nivel de miedo:</p>
+               <div class="formularioDivRange">
+                    <input type="range" class="rangoForm" id="formMiedo" min="1" max="10" step="1">
+                    <p id="valorFormMiedo" class="textRange">10</p>
+               </div>
+
+             <div class="formularioDiv">
+               <button class="botonForm" id="btnGuardar" style="background-color: rgba(85, 211, 81, 0.781);">Guardar</button>
+               <button class="botonForm" id="btnLimpiar" style="background-color: rgba(81, 111, 211, 0.781);">Limpiar</button>
+               <button class="botonForm" id="btnSalirForm" style="background-color: rgb(228, 231, 37);">Salir</button>
+             </div>
+           </div>
+        </dialog>
+    </div>
+
+    <div class="contenedorFluido">
+    <div class="container-fluid" style="background-color: rgb(46, 45, 45); display: flex;">
+      <div class="contenedorFooter">
+        <p class="textoFooter" id="agradecimientos">Este proyecto fue realizado con tecnicas aprendidas<br>en codo a codo y la facultad UTN Avellaneda<br>
+        <br>Agradecimientos:<br>
+        Fabio Lastra Prof. Codo a Codo.<br>
+        Christian Baus Prof. UTN.</p>
+      </div>
+    </div>
+    <div class="container-fluid" style="background-color: rgb(46, 45, 45); display: flex;" id="redes">
+         <div class="contenedorFooter">
+           <a href="mailto:chris.d.pascual@gmail.com?subject=pagina Web codo a codo&body=Increible diseño">
+            <img src="./ccs/imagenes/social media/gmail.png" class="socialMedia">
+           </a>
+           <a href="https://www.linkedin.com/in/christian-pascual-81363620b/" target="_blank">
+            <img src="./ccs/imagenes/social media/LinkedIn.png" class="socialMedia">
+           </a>
+           <a href="https://twitter.com/SchryD" target="_blank">
+            <img src ="./ccs/imagenes/social media/X.png" class="socialMedia">
+          </a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

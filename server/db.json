@@ -1,0 +1,172 @@
+{
+  "monstruos": [
+    {
+      "id": 2,
+      "nombre": "Allucard",
+      "tipo": "vampiro",
+      "debilidad": "estaca",
+      "alias": "Vlad Vlaidimir",
+      "miedo": 7
+    },
+    {
+      "id": 3,
+      "nombre": "Snoopy",
+      "tipo": "hombre lobo",
+      "debilidad": "plata",
+      "alias": "Shakira",
+      "miedo": 6
+    },
+    {
+      "id": 4,
+      "nombre": "Frankenstein",
+      "tipo": "zombie",
+      "debilidad": "pocion",
+      "alias": "Franky",
+      "miedo": 8
+    },
+    {
+      "id": 6,
+      "nombre": "Tito",
+      "tipo": "fantasma",
+      "debilidad": "crucifijo",
+      "alias": "Gasparin",
+      "miedo": 6
+    },
+    {
+      "id": 5,
+      "nombre": "Sabrina",
+      "tipo": "bruja",
+      "debilidad": "pocion",
+      "alias": "Cachavacha",
+      "miedo": 2
+    },
+    {
+      "id": 8,
+      "nombre": "Ramses",
+      "tipo": "zombie",
+      "debilidad": "estaca",
+      "alias": "la momia",
+      "miedo": 8
+    },
+    {
+      "id": 7,
+      "nombre": "Ibmoz",
+      "tipo": "zombie",
+      "debilidad": "crucifijo",
+      "alias": "el Z",
+      "miedo": 3
+    },
+    {
+      "id": 10,
+      "nombre": "Demonio",
+      "tipo": "esqueleto",
+      "debilidad": "crucifijo",
+      "alias": "Lucifer",
+      "miedo": 10
+    },
+    {
+      "id": 11,
+      "nombre": "Rojo",
+      "tipo": "esqueleto",
+      "debilidad": "crucifijo",
+      "alias": "Red",
+      "miedo": 4
+    },
+    {
+      "id": 12,
+      "nombre": "Annabell",
+      "tipo": "zombie",
+      "debilidad": "crucifijo",
+      "alias": "Annie",
+      "miedo": 1
+    },
+    {
+      "id": 13,
+      "nombre": "Lobizon",
+      "tipo": "hombre lobo",
+      "debilidad": "plata",
+      "alias": "Wolfy",
+      "miedo": 4
+    },
+    {
+      "id": 14,
+      "nombre": "Teach",
+      "tipo": "esqueleto",
+      "debilidad": "pocion",
+      "alias": "Barba gris",
+      "miedo": 7
+    },
+    {
+      "id": 15,
+      "nombre": "Silvanas",
+      "tipo": "vampiro",
+      "debilidad": "estaca",
+      "alias": "Vampiresa",
+      "miedo": 3
+    },
+    {
+      "id": 16,
+      "nombre": "Skellington",
+      "tipo": "esqueleto",
+      "debilidad": "pocion",
+      "alias": "Jack",
+      "miedo": 5
+    },
+    {
+      "id": 17,
+      "nombre": "Gremlin",
+      "tipo": "zombie",
+      "debilidad": "plata",
+      "alias": "Furby",
+      "miedo": 2
+    },
+    {
+      "id": 18,
+      "nombre": "Genio",
+      "tipo": "bruja",
+      "debilidad": "crucifijo",
+      "alias": "gran G",
+      "miedo": 4
+    },
+    {
+      "id": 19,
+      "nombre": "Pomberito",
+      "tipo": "bruja",
+      "debilidad": "pocion",
+      "alias": "pompi",
+      "miedo": 7
+    },
+    {
+      "id": 9,
+      "nombre": "Gengar",
+      "tipo": "fantasma",
+      "debilidad": "crucifijo",
+      "alias": "Fantasmin",
+      "miedo": 6
+    },
+    {
+      "id": 99,
+      "nombre": "Belmont",
+      "tipo": "vampiro",
+      "debilidad": "estaca",
+      "alias": "Trevor",
+      "miedo": 8
+    },
+    {
+      "id": 25,
+      "nombre": "Cthulu",
+      "tipo": "zombie",
+      "debilidad": "crucifijo",
+      "alias": "pulpin",
+      "miedo": 10
+    },
+    {
+      "id": 92,
+      "nombre": "pepe",
+      "tipo": "esqueleto",
+      "debilidad": "crucifijo",
+      "alias": "huesitos",
+      "miedo": 8
+    }
+  ]
+}

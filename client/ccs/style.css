@@ -1,0 +1,1312 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.5s ease;
+}
+.fondo
+{
+    background-image: URL("/client/ccs/imagenes/fondo.jpg");
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.jumbotron.jumbotron-fluid
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    object-fit: contain;
+    @media (min-width:991px)/*computadoras*/
+    {
+        padding-top: 20px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        padding-top: 20px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        padding-top: 20px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        padding-top: 60px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        padding-top: 60px;
+    }
+}
+
+.img-fluid
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    object-fit: cover;
+}
+
+.boton-medio-circulo
+{
+    border-radius: 15px;
+    background-color:rgb(215, 173, 250);
+    border-color: rgb(82, 67, 67); 
+    cursor: pointer;
+    text-align: center;
+    object-position: center;
+    justify-content:center;
+    align-items: center;
+
+    @media (min-width:991px)/*computadoras*/
+    {
+        border-width: 4px;
+        width: 70px; 
+        height: 55px; 
+        padding: 6px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        border-width: 4px;
+        width: 70px;  
+        height: 55px; 
+        padding: 6px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        border-width: 4px;
+        width: 70px;  
+        height: 55px;  
+        padding: 6px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        border-width: 4px;
+        width: 90px;   
+        height: 55px; 
+        padding: 0;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        border-width: 4px;
+        width: 70px;  
+        height: 50px;  
+        padding: 0;
+    }
+}
+.contenedorFooter
+{
+    object-position: center;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    @media (min-width:991px)/*computadoras*/
+    {
+        flex-direction: row;
+        padding: 20px;
+        margin-left: 160px;
+        width: 100%;
+        height: 210px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        flex-direction: row;
+        padding: 10px;
+        width: 100%;
+        height: 180px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        flex-direction: row;
+        padding: 5px;
+        width: 100%;
+        height: 140px;;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        flex-direction: row;
+        padding: 0;
+        width: 100%;
+        height: 180px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+        height: 240px;
+    }
+}
+
+.textoFooter
+{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: justify;
+    color: white;
+    font-weight: bold; /* Peso de la fuente */
+    text-shadow: 
+    -1px -1px 0 black, /* Sombra superior izquierda */
+    1px -1px 0 black, /* Sombra superior derecha */
+    -1px 1px 0 black, /* Sombra inferior izquierda */
+    1px 1px 0 black; /* Sombra inferior derecha */
+    @media (min-width:991px)/*computadoras*/
+    {
+        font-size: 100%;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        font-size: 80%;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        font-size: 80%;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        font-size: 70%;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        font-size: 70%;
+    }
+}
+
+.contenedorFluido
+{
+    display: flex;
+    @media (min-width:991px)/*computadoras*/
+    {
+        flex-direction: row;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        flex-direction: row;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        flex-direction: column;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        flex-direction: column;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        flex-direction: column;
+    }
+}
+.socialMedia
+{
+    width: 65px;
+    height: 60px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.navbar
+{
+    background-color: #be52e9;
+}
+
+.filtrador
+{
+    display: flex;
+    transform: translate(0,0);
+    width: 0px;
+    padding-top: 30px;
+    height: 100%;
+    background-color:  rgb(90, 73, 192);
+    border-right: 1px solid rgb(0, 0, 0);
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 300;
+    overflow: hidden;
+    position: fixed;
+    transition: all 0.5s ease;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.filtrador.activo
+{
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    @media (min-width:991px) and (min-height: 500px)/*computadoras*/
+    {
+        width: 200px;
+        padding-top: 20px;
+
+    }
+    @media (min-width: 751px) and (max-width: 990px) and (min-height: 500px)/*tablets*/
+    {
+        padding-top: 100px;
+        width: 200px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    @media (min-width: 751px) and (max-width: 990px) and (max-height: 499px)/*tablets*/
+    {
+        padding-top: 190px;
+        width: 200px;
+        overflow: hidden;
+        overflow-y: auto;
+
+    }
+    @media (min-width: 751px) and (max-width: 990px) and (max-height: 399px)/*tablets*/
+    {
+        padding-top: 285px;
+        width: 200px;
+        overflow: hidden;
+        overflow-y: auto;
+
+    }
+    @media (min-width: 751px) and (max-width: 990px) and (max-height: 299px)/*tablets*/
+    {
+        padding-top: 300px;
+        width: 200px;
+        overflow: hidden;
+        overflow-y: auto;
+
+    }
+    @media (min-width: 600px) and (max-width: 990px) and (min-height: 500px)/*tablets*/
+    {
+        padding-top: 100px;
+        width: 200px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    @media (min-width: 600px) and (max-width: 990px) and (max-height: 499px)/*tablets*/
+    {
+        padding-top: 190px;
+        width: 200px;
+        overflow: hidden;
+        overflow-y: auto;
+
+    }
+    @media (min-width: 600px) and (max-width: 990px) and (max-height: 399px)/*tablets*/
+    {
+        padding-top: 285px;
+        width: 200px;
+        overflow: hidden;
+        overflow-y: auto;
+
+    }
+    @media (min-width: 600px) and (max-width: 990px) and (max-height: 299px)/*tablets*/
+    {
+        padding-top: 300px;
+        width: 200px;
+        overflow: hidden;
+        overflow-y: auto;
+
+    }
+    @media (min-width: 321px) and (max-width: 599px) and (max-width: 990px) and (min-height: 500px)/*tablets*/
+    {
+        padding-top: 100px;
+        width: 150px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    @media (min-width: 321px) and (max-width: 599px) and (max-width: 990px) and (max-height: 499px)/*tablets*/
+    {
+        padding-top: 190px;
+        width: 150px;
+        overflow: hidden;
+        overflow-y: auto;
+
+    }
+    @media (min-width: 321px) and (max-width: 599px) and (max-width: 990px) and (max-height: 399px)/*tablets*/
+    {
+        padding-top: 285px;
+        width: 150px;
+        overflow: hidden;
+        overflow-y: auto;
+
+    }
+    @media (min-width: 321px) and (max-width: 599px) and (max-width: 990px) and (max-height: 299px)/*tablets*/
+    {
+        padding-top: 300px;
+        width: 150px;
+        overflow: hidden;
+        overflow-y: auto;
+
+    }
+    @media (max-width: 320px) and (max-width: 990px) and (min-height: 500px)/*tablets*/
+    {
+        padding-top: 100px;
+        width: 100px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    @media (max-width: 320px) and (max-width: 990px) and (max-height: 499px)/*tablets*/
+    {
+        padding-top: 190px;
+        width: 100px;
+        overflow: hidden;
+        overflow-y: auto;
+
+    }
+    @media (max-width: 320px) and (max-width: 990px) and (max-height: 399px)/*tablets*/
+    {
+        padding-top: 285px;
+        width: 100px;
+        overflow: hidden;
+        overflow-y: auto;
+
+    }
+    @media (max-width: 320px) and (max-width: 990px) and (max-height: 299px)/*tablets*/
+    {
+        padding-top: 300px;
+        width: 100px;
+        overflow: hidden;
+        overflow-y: auto;
+
+    }
+}
+.filtrador.inactivo
+{
+
+    width: 0px;
+}
+
+.body_activo
+{ 
+    @media (min-width:991px) /*computadoras*/
+    {
+        margin-left: 200px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        margin-left: 200px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        margin-left: 200px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        margin-left: 150px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        margin-left: 100px;
+    }
+}
+.busqueda
+{
+    object-position: center;
+    justify-content:left;
+    align-items: center;
+    padding: 0;
+    border: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    
+    @media (min-width:991px)/*computadoras*/
+    {
+        width: 180px;
+        height: 50px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        width: 180px;
+        height: 50px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        width: 170px;
+        height: 50px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        width: 145px;
+        height: 70px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        width: 100px;
+        height: 75px;
+    }
+
+}
+
+.busqueda-check
+{
+    object-position: center;
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+    
+    @media (min-width:991px)/*computadoras*/
+    {
+        width: 20px;
+        height: 70px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        width: 20px;
+        height: 70px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        width: 20px;
+        height: 70px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        width: 100px;
+        height: 40px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        width: 90px;
+        height: 35px;
+    }
+
+}
+
+
+.gif
+{
+    display: none;
+    width: 400px; /* Ancho del elemento */
+    height: 400px; /* Altura del elemento */
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.contenedor
+{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Propiedad para scroll suave en iOS */
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    max-width: 100%;
+    margin: auto;
+
+    @media (min-width:991px)/*computadoras*/
+    {
+        width: 1000px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        width: 700px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        width: 700px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        width: 500px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        width: 300px;
+    }
+
+}
+
+.divTabla
+{
+    background-color: black;
+}
+.table
+{
+    border-collapse: collapse;
+    background-color: rgb(0, 0, 0);
+    border-color: black;
+    justify-content: center;
+    align-items: center;
+}
+.table td:first-child {
+    display: none; /* Ocultar visualmente la primera columna */
+}
+.table th:first-child {
+    display: none; /* Ocultar visualmente el primer elemento de la cabecera*/
+}
+table tr:first-child th {
+    border-width: 3px;
+  border-color: black;
+}
+
+.table-hover tr:hover {
+    background-color: #919191; /* Cambiar el color de fondo al hacer hover sobre una fila */
+    border-width: 3px;
+    border-color: #f18d4a;
+}
+.table-striped tbody tr {
+  border-width: 2px;
+  border-color: black;
+}
+.lupa
+{
+    @media (min-width:991px)/*computadoras*/
+    {
+        width: 50px;
+        height: 50px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        width: 50px;
+        height: 50px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        width: 50px;
+        height: 50px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        width: 35px;
+        height: 35px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        width: 25px;
+        height: 25px;
+    }
+}
+.botonBusqueda
+{
+    border-radius: 7px;
+    border-color: black;
+    object-position: center;
+    align-items: center;
+    @media (min-width:991px)/*computadoras*/
+    {
+        width: 80px;
+        height: 40px;
+        margin-left: 5px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        width: 80px;
+        height: 40px;
+        margin-left: 5px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        width: 80px;
+        height: 40px;
+        margin-left: 5px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        width: 60px;
+        height: 30px;
+        margin-left: 10px;
+        margin-top: 30px;
+        top: 20px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        width: 42px;
+        height: 30px;
+        margin-left: 5px;
+        margin-top: 30px;
+        top: 20px;
+    }
+}
+#checkBusqueda{
+    object-position: center;
+    justify-content:center;
+    align-items: center;
+    
+    @media (min-width:991px)/*computadoras*/
+    {
+        padding: 10px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        padding: 10px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        padding: 10px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        top: -4px;
+        padding: 0;
+        margin: 0;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        top: -4px;
+        padding: 0;
+        margin: 0;
+    }
+    
+}
+.textoBusqueda
+{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: left;
+    color: white;
+    font-weight: bold; /* Peso de la fuente */
+    text-shadow: 
+    -1px -1px 0 black, /* Sombra superior izquierda */
+    1px -1px 0 black, /* Sombra superior derecha */
+    -1px 1px 0 black, /* Sombra inferior izquierda */
+    1px 1px 0 black; /* Sombra inferior derecha */
+    @media (min-width:991px)/*computadoras*/
+    {
+        margin-left: 0;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        margin-left: 0;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        margin-left: 0;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        width: 50%;
+        margin-left: 20px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        width: 50%;
+        margin-left: 8px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}
+.txtBusBoton
+{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    font-weight: bold; /* Peso de la fuente */
+    text-shadow: 
+    -1px -1px 0 black, /* Sombra superior izquierda */
+    1px -1px 0 black, /* Sombra superior derecha */
+    -1px 1px 0 black, /* Sombra inferior izquierda */
+    1px 1px 0 black; /* Sombra inferior derecha */
+    @media (min-width:991px)/*computadoras*/
+    {
+        margin: auto;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+
+        margin: auto;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        margin: auto;
+
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        font-size: 15px;
+        margin: auto;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        font-size: 10px;
+        margin: auto;
+    }
+}
+.titulo
+{
+    color: chartreuse;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: left;
+    font-weight: bold; /* Peso de la fuente */
+    text-shadow: 
+    -1px -1px 0 black, /* Sombra superior izquierda */
+    1px -1px 0 black, /* Sombra superior derecha */
+    -1px 1px 0 black, /* Sombra inferior izquierda */
+    1px 1px 0 black; /* Sombra inferior derecha */
+    
+    @media (min-width:991px)/*computadoras*/
+    {
+        font-size: 30px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        font-size: 30px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        font-size: 30px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        font-size: 15px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        font-size: 15px;
+    }
+}
+.textoForm
+{
+    color: chartreuse;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: left;
+    font-weight: bold; /* Peso de la fuente */
+    text-shadow: 
+    -1px -1px 0 black, /* Sombra superior izquierda */
+    1px -1px 0 black, /* Sombra superior derecha */
+    -1px 1px 0 black, /* Sombra inferior izquierda */
+    1px 1px 0 black; /* Sombra inferior derecha */
+}
+.selectorBusqueda
+{
+    border-radius: 5px;
+    @media (min-width:991px)/*computadoras*/
+    {
+        width: 180px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        width: 180px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        width: 170px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        width: 115px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        width: 85px;
+    }
+}
+.labelRBusqueda
+{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: left;
+    color: white;
+    font-weight: bold; /* Peso de la fuente */
+    text-shadow: 
+    -1px -1px 0 black, /* Sombra superior izquierda */
+    1px -1px 0 black, /* Sombra superior derecha */
+    -1px 1px 0 black, /* Sombra inferior izquierda */
+    1px 1px 0 black; /* Sombra inferior derecha */
+    
+    @media (min-width:991px)/*computadoras*/
+    {
+        margin-right: 20px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        margin-right: 20px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        margin-right: 10px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        margin-right: 5px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        font-size: 13px;
+        margin-right: 2px;
+    }
+
+}
+.rangoBusqueda
+{
+
+    @media (min-width:991px)/*computadoras*/
+    {
+        width: 170px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        width: 170px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        width: 150px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        width: 115px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        width: 85px;
+    }
+}
+
+.btnNuevoMonstruo
+{
+    border-radius: 15px;
+    background-color:rgb(252, 154, 97);
+    border-color: rgb(82, 67, 67); 
+    cursor: pointer;
+    text-align: center;
+    object-position: center;
+    justify-content:center;
+    align-items: center;
+
+    @media (min-width:991px)/*computadoras*/
+    {
+        margin: 4px;
+        border-width: 4px;
+        width: 150px; 
+        height: 55px; 
+        padding: 6px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        border-width: 4px;
+        width: 150px;  
+        height: 55px; 
+        padding: 6px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        border-width: 4px;
+        width: 150px;  
+        height: 55px;  
+        padding: 6px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        border-width: 4px;
+        width: 110px;   
+        height: 55px; 
+        padding: 1px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        border-width: 4px;
+        width: 70px;  
+        height: 50px;  
+        padding: 0;
+    }
+}
+.formulario
+{
+    color: rgb(107, 0, 139);
+    object-position: center;
+    justify-content:center;
+    align-items: center;
+    margin: 0;
+    position: fixed;
+    padding: 30px;
+    background-color: rgb(240, 149, 12);
+    border: solid 5px;
+    border-color: rgb(107, 0, 139);
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    overflow-y: auto;
+
+    @media (min-width:991px)/*computadoras*/
+    {
+        width: 500px;
+        height: 500px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        width: 500px;
+        height: 500px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        width: 450px;
+        height: 450px;
+        padding: 15px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        width: 250px;
+        height: 400px;
+        padding: 10px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        width: 250px;
+        height: 400px;
+        padding: 10px;
+    }   
+}
+
+.formulario::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+}
+.formulario::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del thumb */
+    border-radius: 15px; /* Bordes redondeados del thumb */
+}
+
+.formularioDiv,.formularioDivRange
+{
+    object-position: center;
+    justify-content:left;
+    align-items: center;
+    padding: 5px;
+    margin: 0;
+    border: 0;
+
+    
+    @media (min-width:991px)/*computadoras*/
+    {
+        width: 400px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        width: 400px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        width: 400px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        width: 250px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        width: 250px;
+    }
+}
+.formularioDivRange
+{
+    display: flex;
+    background-color: rgb(253, 253, 253);
+    border-radius: 15px;
+    @media (min-width:991px)/*computadoras*/
+    {
+        width: 400px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        width: 400px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        width: 400px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        width: 200px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        width: 200px;
+    }
+}
+
+.formularioInput, .selectForm
+{
+    @media (min-width:991px)/*computadoras*/
+    {
+        width: 400px;
+        height: 28px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        width: 400px;
+        height: 28px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        width: 400px;
+        height: 28px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        width: 200px;
+        height: 20px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        width: 200px;
+        height: 20px;
+    }
+    
+}
+.form-check.form-check-inline
+{
+    border: 0; 
+    padding: 0;
+    margin: 0;
+    .labelFormulario
+    {
+        @media (min-width:991px)/*computadoras*/
+        {
+            margin-right: 20px;
+        }
+        @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+        {
+            margin-right: 20px;
+        }
+        @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+        {
+            margin-right: 20px;
+        }
+        @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+        {
+            margin-right: 35px;
+            width: 25%;
+        }
+        @media (max-width: 320px)/*celulares chicos*/
+        {        
+            mmargin-right: 0px;
+            width: 40%;
+        }
+    }
+}
+.rangoForm
+{
+    display: flex;
+    object-position: center;
+    justify-content:center;
+    align-items: center;
+
+    @media (min-width:991px)/*computadoras*/
+    {
+        width: 340px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        width: 340px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        width: 340px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        width: 145px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        width: 145px;
+    }
+}
+.textRange
+{
+    color: chartreuse;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    border: 0;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    object-position: center;
+    font-weight: bold; /* Peso de la fuente */
+    text-shadow: 
+    -1px -1px 0 black, /* Sombra superior izquierda */
+    1px -1px 0 black, /* Sombra superior derecha */
+    -1px 1px 0 black, /* Sombra inferior izquierda */
+    1px 1px 0 black; /* Sombra inferior derecha */
+
+}
+.textBusquedaRange
+{
+    color: white;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    border: 0;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    object-position: center;
+    font-weight: bold; /* Peso de la fuente */
+    text-shadow: 
+    -1px -1px 0 black, /* Sombra superior izquierda */
+    1px -1px 0 black, /* Sombra superior derecha */
+    -1px 1px 0 black, /* Sombra inferior izquierda */
+    1px 1px 0 black; /* Sombra inferior derecha */
+}
+input[type="range"]
+{
+
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgb(173, 173, 173);
+    border-radius: 5px;
+    height: 3px;
+        
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: rgb(70, 0, 92);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.labelFormulario
+{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: left;
+    color: white;
+    font-weight: bold; /* Peso de la fuente */
+    text-shadow: 
+    -1px -1px 0 black, /* Sombra superior izquierda */
+    1px -1px 0 black, /* Sombra superior derecha */
+    -1px 1px 0 black, /* Sombra inferior izquierda */
+    1px 1px 0 black; /* Sombra inferior derecha */
+    
+    @media (min-width:991px)/*computadoras*/
+    {
+        margin-right: 0px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        margin-right: 0px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        margin-right: 0px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        margin-right: 0px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        font-size: 13px;
+        margin-right: 2px;
+    }
+
+}
+
+.botonForm
+{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    font-weight: bold; /* Peso de la fuente */
+    text-shadow: 
+    -1px -1px 0 black, /* Sombra superior izquierda */
+    1px -1px 0 black, /* Sombra superior derecha */
+    -1px 1px 0 black, /* Sombra inferior izquierda */
+    1px 1px 0 black; /* Sombra inferior derecha */
+    @media (min-width:991px)/*computadoras*/
+    {
+        width: 100px;
+        height: 30px;
+        margin-top: 20px;
+        margin-right: 13px;
+        margin-left: 13px;
+        border-radius: 8px;
+    }
+    @media (min-width: 751px) and (max-width: 990px)/*tablets*/
+    {
+        width: 100px;
+        height: 30px;
+        margin-top: 20px;
+        margin-right: 13px;
+        margin-left: 13px;
+        border-radius: 8px;
+    }
+    @media (min-width: 600px) and (max-width: 750px)/*tablets*/
+    {
+        width: 100px;
+        height: 30px;
+        margin-top: 20px;
+        margin-right: 12px;
+        margin-left: 12px;
+        border-radius: 8px;
+    }
+    @media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+    {
+        width: 60px;
+        height: 30px;
+        margin-top: 10px;
+        margin-right: 0px;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+    @media (max-width: 320px)/*celulares chicos*/
+    {
+        width: 60px;
+        height: 30px;
+        margin-top: 10px;
+        margin-right: 0px;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+}
+
+.icono
+{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
