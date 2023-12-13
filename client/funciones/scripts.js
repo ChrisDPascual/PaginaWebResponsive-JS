@@ -2,7 +2,7 @@ import { crearTabla,refrescarDiv,elFiltrador,filtrarDebilidades,filtrarMiedos,fi
 import { validarNumero,validarTexto,validarTipo,postMonstruo,updateMonstruo,deleteMonstruo,getterTabla } from "./miBiblioteca.js";
 
 
-const tipos =  ["esqueleto","zombie","vampiro","fantastma","bruja","hombre lobo"]; 
+const tipos =  ["esqueleto","zombie","vampiro","fantasma","bruja","hombre lobo"]; 
 const loader = document.getElementById("gif");
 const menuDesplegable = document.getElementById("filtrador");
 const btnAbrirMenuDesplegable = document.getElementById("botonAbrirMenu");
